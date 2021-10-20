@@ -7,6 +7,7 @@ import AddPost from './components/addpost'
 import{BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 //Switch tag stops when link is matched first time//Only one path can be choosen at one time//
 
+//By passing througn component object we pass props to the component//
 function App() {
   return (
     <Router>
@@ -23,7 +24,7 @@ function App() {
             <Route path="/contact">
               <Contact />
             </Route>
-            <Route path="/posts/:post_id" component={Post}/>
+            <Route path="/posts/:post_id" component={Post}/> 
             <Route path='/addpost'>
               <AddPost/>
             </Route>
