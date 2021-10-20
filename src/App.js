@@ -5,7 +5,7 @@ import Contact from './components/contact'
 import Post from './components/post'
 import AddPost from './components/addpost'
 import{BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-//Switch tag stops when link is matched first time//
+//Switch tag stops when link is matched first time//Only one path can be choosen at one time//
 
 function App() {
   return (
